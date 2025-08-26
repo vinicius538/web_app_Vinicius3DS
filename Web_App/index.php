@@ -6,7 +6,13 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha) VALUES ('$email', '$password')");
+        $result = mysqli_query($conn, 'SELECT * FROM sign_up WHERE email="'.$email.'" AND senha="'.$password.'"');
+        if(mysqli_num_rows($result) > 0){
+            header('Location: home.php');
+        } else {
+            echo "<script>alert('Invalid email or password');</script>";
+        }
+
     }
 ?>
     
@@ -61,7 +67,7 @@
                         </h3>
                             
                         <p>
-                         <br>
+                         <br>                                                                                                                                                               
 
                             <div class="form-floating mb-3" style="width: 300px;">
                               <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
@@ -96,8 +102,6 @@
 
                         <p style="margin-top: 30px;">
                             <div class="new">
-                                <a href="index.php">Can't sign in?</a>
-                                <br>
                                 <a href="sign_up.php">Create account</a>
                             </div>
                         </p>

@@ -10,7 +10,4 @@
         echo"Connection failed: ";
     }
 
-    else{
-        echo "Connected successfully";
-    }
 ?>
