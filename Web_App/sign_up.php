@@ -8,7 +8,12 @@
         $name = $_POST['name'];
         $number = $_POST['number'];
 
-        $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
+        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM sign_up WHERE email='$email'")) > 0) {
+            echo "<script>alert('Email already registered. Please use a different email.');</script>";
+        } else {
+            $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
+        }
+        
     }
 ?>
 
@@ -16,6 +21,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +75,7 @@
                               <label for="floatingInput">Email</label>
                             </div>
                             <div class="form-floating" style="width: 300px;">
-                              <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
+                              <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" minlength="4" required>
                               <label for="floatingPassword">Password</label>
                             </div>
                         </p>
@@ -117,3 +123,4 @@
     </div>
 </body>
 </html>
+

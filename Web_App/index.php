@@ -52,6 +52,24 @@
             border: 2px solid #52606D;
             color: #52606D;
         }
+        #face {
+            background-color: #0080ffff;
+            font-size: 20px;
+            border: gray;
+            width: 100px;
+        }
+        #git {
+            background-color: #333333;
+            font-size: 20px;
+            border: gray;
+            width: 100px;
+        }
+        #google{
+            background-color: #db4437;
+            font-size: 20px;
+            border: gray;
+            width: 100px;
+        }
     </style>
 </head>
 <body style="background-color: lightgray;">
@@ -82,15 +100,15 @@
 
                         <br>
 
-                        <button class="btn btn-secondary">
+                        <button class="btn btn-secondary" id="google">
                             <i class="bi bi-google">
                             </i>
                         </button>
-                        <button class="btn btn-secondary">
+                        <button class="btn btn-secondary" id="face">
                             <i class="bi bi-facebook">
                             </i>
                         </button>
-                        <button class="btn btn-secondary">
+                        <button class="btn btn-secondary" id="git">
                             <i class="bi bi-github">
                             </i>
                         </button>

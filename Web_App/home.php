@@ -13,21 +13,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
 </head>
-<body>
+<body style="background-color: lightgray;">
     <ul class="nav justify-content-end" style="background-color: white;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <a class="nav-link active" aria-current="page" href="#" style="color: black;">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#" style="color: black;">Link</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="configuracao_user.php">
-        <i class="bi bi-gear-fill"></i>
+        <i class="bi bi-gear-fill" style="color: black;"></i>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true" style="color: white;">Disabled</a>
+    <a href="home.php" class="nav-link">
+        <i class="bi bi-house-door-fill" style="color: black;"></i>
+    </a>
   </li>
 </ul>
     <div class="container-fluid">
@@ -37,7 +39,4 @@
     </div>
 </body>
 
-<script>
-    alert('Login efetuado com sucesso!');      
-</script>
 </html>
