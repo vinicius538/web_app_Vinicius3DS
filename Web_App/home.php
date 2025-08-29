@@ -16,10 +16,9 @@
 <body style="background-color: lightgray;">
     <ul class="nav justify-content-end" style="background-color: white;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#" style="color: black;">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" style="color: black;">Link</a>
+    <a class="nav-link" href="index.php" style="color: black;">
+      <i class="bi bi-person-circle"></i>
+    </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="configuracao_user.php">
