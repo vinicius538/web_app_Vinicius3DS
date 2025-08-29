@@ -1,1 +1,0 @@
-select * from sign_up;
