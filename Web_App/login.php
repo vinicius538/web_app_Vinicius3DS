@@ -13,6 +13,5 @@
         } else {
             $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
         }
-        
     }
 ?>
