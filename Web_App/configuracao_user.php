@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    include_once('config.php');
+    include_once('login_config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +20,9 @@
 <body style="background-color: lightgray;">
     <ul class="nav justify-content-end" style="background-color: white;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#" style="color: black;">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" style="color: black;">Link</a>
+    <a class="nav-link" href="index.php" style="color: black;">
+        <i class="bi bi-person-circle"></i>
+    </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="configuracao_user.php">
@@ -39,11 +44,22 @@
                                 Config
                             </strong>
                         </h3>
-                        <a href="edit_cadastro.php">
-                            <button type="button" class="btn btn-secondary">
-                                Change Password
-                            </button>
-                        </a>
+                        <h4>
+                            <strong>
+                                Actual status:
+                                <?php
+                                    $status = mysqli_query($conn, 'SELECT status FROM sign_up WHERE email="'.$_SESSION['email'].'"');
+                                    if ($status === 'disponivel'){
+                                        echo "Disponivel";
+                                    }
+                                    else{
+                                        echo "Indisponivel";
+                                    }
+                                ?>
+                                
+                            </strong>
+                        </h4>
+
                     </div>
                 </div>
             </center>
