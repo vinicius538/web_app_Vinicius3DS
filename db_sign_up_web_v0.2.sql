@@ -1,1 +1,0 @@
-SELECT * FROM web_app.sign_up;
