@@ -1,11 +1,18 @@
 <?php
     if(isset($_POST['submit'])){
-        session_start();
-        include_once('login_config.php');
-        
+        include_once('config.php');
+
+        $email = $_POST['email'];
+
+         $result = mysqli_query($conn, 'SELECT * FROM sign_up WHERE email="'.$email.'"');
+            if(mysqli_num_rows($result) > 0){
+                header('Location: home.php');
+            } else {
+                echo "<script>alert('Invalid email');</script>";
+            }
     }
 ?>
-    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,18 +24,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Recovery</title>
     
 </head>
 <body style="background-color: lightgray;">
     <div class="container">
         <div class="row">
             <center>
-                <form action="index.php" method="POST">
+                <form action="rec_login.php" method="POST">
                     <div class="col-4" style="background-color: white; margin-top: 30px; padding-bottom: 40px;">
                         <h3 class="poppins-light" style="padding-top: 50px;">
                             <strong>
-                                Sign in
+                                Recover your login
                             </strong>
                         </h3>
                             
@@ -40,40 +47,11 @@
                               <label for="floatingInput">Email</label>
                             </div>
 
-                            <div class="form-floating" style="width: 300px;">
-                              <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
-                              <label for="floatingPassword">Password</label>
-                            </div>
-
+                            <button type="submit" name ='submit' id="login-button">
+                                <i class="bi bi-arrow-right" id="arrow-icon"></i>
+                            </button>
 
                         <br>
-
-                        <button class="btn btn-secondary google" id="google">
-                            <i class="bi bi-google">
-                            </i>
-                        </button>
-                        <button class="btn btn-secondary facebook" id="face">
-                            <i class="bi bi-facebook">
-                            </i>
-                        </button>
-                        <button class="btn btn-secondary github" id="git">
-                            <i class="bi bi-github">
-                            </i>
-                        </button>
-                        <br>
-
-                        <button type="submit" name ='submit' id="login-button">
-                            <i class="bi bi-arrow-right" id="arrow-icon"></i>
-                        </button>
-
-                        <p style="margin-top: 30px;">
-                            <div class="new">
-                                <a href="sign_up.php">Create account</a>
-                            </div>
-                            <div class="new">
-                                <a href="rec_login.php">Can't sign in?</a>
-                            </div>
-                </div>
                 </form>
             </center>
         </div>
