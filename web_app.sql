@@ -45,7 +45,6 @@ INSERT INTO `sign_up` (`email`, `senha`, `nome`, `numero`, `status`, `qtd_acesso
 ('vinicius.pcd@gmail.com', 'Pcd1234', 'Vinicius de Souza', 981879552, 'disponivel', NULL),
 ('untitled@gmail.com', 'null', 'nulo', 1298181879, 'disponivel', NULL),
 ('nameless@gmail.com', '1234qp', 'Sem Nome', 123, 'disponivel', NULL),
-('thierry.rib.sant@gmail.com', 'vaisefude', 'thierry', 36, 'disponivel', NULL),
 ('jokerdop5r@gmail.com', 'persona5', 'joker do persona 5', 555555555, 'disponivel', NULL),
 ('exemplo@gmail.com', 'exemplo', 'exemplo', 2147483647, 'disponivel', NULL),
 ('eu@gmail.com', '1234', 'viniço', 2147483647, 'disponivel', NULL);
