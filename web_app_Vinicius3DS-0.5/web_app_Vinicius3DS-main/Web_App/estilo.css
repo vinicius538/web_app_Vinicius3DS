@@ -1,0 +1,51 @@
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: #52606D;
+}
+#login-button {
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid gray;
+}
+#arrow-icon {
+    color: gray;
+    font-size: 20px;
+    border: gray;
+}
+#login-button:hover{
+    border: 2px solid #52606D;
+    color: #52606D;
+}
+.facebook {
+    background-color: #0080ffff;
+    font-size: 20px;
+    border: gray;
+    width: 100px;
+}
+.facebook:hover{
+    background-color: #005cbf;
+}
+.github {
+    background-color: #333333;
+    font-size: 20px;
+    border: gray;
+    width: 100px;
+}
+.github:hover{
+    background-color: #1a1a1a;
+}
+.google{
+    background-color: #db4437;
+    font-size: 20px;
+    border: gray;
+    width: 100px;
+}
+.google:hover{
+    background-color: #c13527;
+}
