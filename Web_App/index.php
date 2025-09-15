@@ -1,8 +1,9 @@
 <?php
+    session_start();
+
     if(isset($_POST['submit'])){
-        session_start();
-        include_once('login_config.php');
-        
+        include_once('configuracoes/login_config.php');
+
     }
 ?>
     

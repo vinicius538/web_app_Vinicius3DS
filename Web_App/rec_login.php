@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['submit'])){
-        include_once('config.php');
+        include_once('configuracoes/config.php');
 
         $email = $_POST['email'];
 

@@ -1,7 +1,6 @@
 <?php
     session_start();
-    include_once('config.php');
-    include_once('login_config.php');
+    include_once('configuracoes/login_config.php');
 ?>
 
 <!DOCTYPE html>
