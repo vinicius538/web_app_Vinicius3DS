@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once('configuracoes/config.php');
     include_once('configuracoes/login_config.php');
 ?>
 
@@ -48,16 +49,26 @@
                                 Actual status:
                                 <?php
                                     $status = mysqli_query($conn, 'SELECT status FROM sign_up WHERE email="'.$_SESSION['email'].'"');
-                                    if ($status === 'disponivel'){
-                                        echo "Disponivel";
+                                    if (mysqli_num_rows($status) > 0){
+                                        echo 'Disponível';
                                     }
                                     else{
-                                        echo "Indisponivel";
+                                        echo 'Indisponível';
                                     }
                                 ?>
-                                
                             </strong>
                         </h4>
+                        <a href="edit_cadastro.php">
+                            <button type="button" class="btn btn-secondary">
+                                Edit password
+                            </button>
+                        </a>
+                        <br> <br>
+                        <a href="del_cadastro.php">
+                            <button type="button" class="btn btn-secondary" style="color:red;">
+                                Delete Account
+                            </button>
+                        </a>
 
                     </div>
                 </div>
