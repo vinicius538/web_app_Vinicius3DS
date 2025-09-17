@@ -4,7 +4,7 @@
 
         $email = $_POST['email'];
 
-         $result = mysqli_query($conn, 'SELECT * FROM sign_up WHERE email="'.$email.'"');
+         $result = mysqli_query($conn, 'SELECT * FROM users WHERE email="'.$email.'"');
             if(mysqli_num_rows($result) > 0){
                 header('Location: home.php');
             } else {

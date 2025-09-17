@@ -48,7 +48,7 @@
                             <strong>
                                 Actual status:
                                 <?php
-                                    $status = mysqli_query($conn, 'SELECT status FROM sign_up WHERE email="'.$_SESSION['email'].'"');
+                                    $status = mysqli_query($conn, 'SELECT status FROM users WHERE email="'.$_SESSION['email'].'"');
                                     if (mysqli_num_rows($status) > 0){
                                         echo 'Disponível';
                                     }
