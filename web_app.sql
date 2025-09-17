@@ -29,12 +29,12 @@ USE web_app;
 --
 
 CREATE TABLE `users` (
+  id_user int(4) primary key not null auto_increment,
   `email` varchar(256) NOT NULL,
   `senha` varchar(256) NOT NULL,
   `nome` varchar(256) NOT NULL,
   `numero` int(15) NOT NULL,
   `status` varchar(20) NOT NULL DEFAULT 'disponivel',
-  `qtd_acesso` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
