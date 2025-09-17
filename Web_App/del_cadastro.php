@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit</title>
+    <title>Delete account</title>
     <style>
         a{
             text-decoration: none;
@@ -39,10 +39,9 @@
 <body style="background-color: lightgray;">
     <ul class="nav justify-content-end" style="background-color: white;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#" style="color: black;">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" style="color: black;">Link</a>
+    <a class="nav-link" href="index.php" style="color: black;">
+      <i class="bi bi-person-circle"></i>
+    </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="configuracao_user.php">
