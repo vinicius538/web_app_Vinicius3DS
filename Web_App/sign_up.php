@@ -8,10 +8,10 @@
         $name = $_POST['name'];
         $number = $_POST['number'];
 
-        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM sign_up WHERE email='$email'")) > 0) {
+        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE email='$email'")) > 0) {
             echo "<script>alert('Email already registered. Please use a different email.');</script>";
         } else {
-            $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
+            $result = mysqli_query($conn, "INSERT INTO users(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
         }
         
     }
