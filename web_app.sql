@@ -28,7 +28,7 @@ USE web_app;
 -- Estrutura para tabela `sign_up`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `sign_up` (
   id_user int(4) primary key not null auto_increment,
   `email` varchar(256) NOT NULL,
   `senha` varchar(256) NOT NULL,
@@ -41,14 +41,14 @@ CREATE TABLE `users` (
 -- Despejando dados para a tabela `sign_up`
 --
 
-INSERT INTO `users` (`email`, `senha`, `nome`, `numero`, `status`, `qtd_acesso`) VALUES
-('vinicius.souza110208@gmail.com', 'eunaoaguentomais', 'vinopavel', 12121212, 'disponivel', NULL),
-('vinicius.pcd@gmail.com', 'Pcd1234', 'Vinicius de Souza', 981879552, 'disponivel', NULL),
-('untitled@gmail.com', 'null', 'nulo', 1298181879, 'disponivel', NULL),
-('nameless@gmail.com', '1234qp', 'Sem Nome', 123, 'disponivel', NULL),
-('jokerdop5r@gmail.com', 'persona5', 'joker do persona 5', 555555555, 'disponivel', NULL),
-('exemplo@gmail.com', 'exemplo', 'exemplo', 2147483647, 'disponivel', NULL),
-('eu@gmail.com', '1234', 'viniço', 2147483647, 'disponivel', NULL);
+INSERT INTO `sign_up` (`email`, `senha`, `nome`, `numero`, `status`) VALUES
+('vinicius.souza110208@gmail.com', 'eunaoaguentomais', 'vinopavel', 12121212, 'disponivel'),
+('vinicius.pcd@gmail.com', 'Pcd1234', 'Vinicius de Souza', 981879552, 'disponivel'),
+('untitled@gmail.com', 'null', 'nulo', 1298181879, 'disponivel'),
+('nameless@gmail.com', '1234qp', 'Sem Nome', 123, 'disponivel'),
+('jokerdop5r@gmail.com', 'persona5', 'joker do persona 5', 555555555, 'disponivel'),
+('exemplo@gmail.com', 'exemplo', 'exemplo', 2147483647, 'disponivel'),
+('eu@gmail.com', '1234', 'viniço', 2147483647, 'disponivel');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
