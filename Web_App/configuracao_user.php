@@ -21,7 +21,7 @@
     <ul class="nav justify-content-end" style="background-color: white;">
   <li class="nav-item">
     <a class="nav-link" href="index.php" style="color: black;">
-        <i class="bi bi-person-circle"></i>
+      <i class="bi bi-person-circle"></i>
     </a>
   </li>
   <li class="nav-item">
@@ -32,6 +32,11 @@
   <li class="nav-item">
     <a href="home.php" class="nav-link">
         <i class="bi bi-house-door-fill" style="color: black;"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tab_usuarios.php">
+        <i class="bi bi-table" style="color:black"></i>
     </a>
   </li>
 </ul>

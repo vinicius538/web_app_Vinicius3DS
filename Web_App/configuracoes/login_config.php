@@ -6,6 +6,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
+
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
 
@@ -13,6 +14,9 @@
             $_SESSION['attempts'] = 0;
         }
 
+        $id_user = mysqli_query($conn, 'SELECT id_user FROM sign_up WHERE email="'.$email.'" AND senha="'.$password.'"');
+        $_SESSION['id_user'] = $id_user;
+        
         $result = mysqli_query($conn, 'SELECT * FROM sign_up WHERE email="'.$email.'" AND senha="'.$password.'"');
         if(mysqli_num_rows($result) > 0){
             header('Location: home.php');
@@ -29,6 +33,5 @@
                 
             }
         }
-
     }
 ?>

@@ -27,6 +27,11 @@
         <i class="bi bi-house-door-fill" style="color: black;"></i>
     </a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tab_usuarios.php">
+        <i class="bi bi-table" style="color:black"></i>
+    </a>
+  </li>
 </ul>
     <div class="container-fluid">
         <div class="row">

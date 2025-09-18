@@ -1,3 +1,8 @@
+<?php
+    include_once('configuracoes/config.php');
+    include_once('configuracoes/delete_account.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +42,11 @@
     </style>
 </head>
 <body style="background-color: lightgray;">
-    <ul class="nav justify-content-end" style="background-color: white;">
+     <ul class="nav justify-content-end" style="background-color: white;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#" style="color: black;">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" style="color: black;">Link</a>
+    <a class="nav-link" href="index.php" style="color: black;">
+      <i class="bi bi-person-circle"></i>
+    </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="configuracao_user.php">
@@ -54,11 +58,16 @@
         <i class="bi bi-house-door-fill" style="color: black;"></i>
     </a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tab_usuarios.php">
+        <i class="bi bi-table" style="color:black"></i>
+    </a>
+  </li>
 </ul>
 <div class="container">
         <div class="row">
             <center>
-                <form action="sign_up.php" method="POST">
+                <form action="del_cadastro.php" method="POST">
                     <div class="col-4" style="background-color: white; margin-top: 30px; padding-bottom: 40px;">
                         <h3 class="poppins-light" style="padding-top: 50px;">
                             <strong>
@@ -73,19 +82,13 @@
                               <label for="floatingpassword">Actual Password</label>
                             </div>
                             <div class="form-floating" style="width: 300px;">
-                              <input type="password" class="form-control" name="confirm_password1" id="floatingPassword" placeholder="Password" minlength="4" required>
+                              <input type="password" class="form-control" name="confirm_password" id="floatingPassword" placeholder="Password" minlength="4" required>
                               <label for="floatingPassword">Confirm Password</label>
                             </div>
                         </p>
                             
-                        <p>
-                            <div class="form-floating mb-3" style="width: 300px;">
-                              <input type="password" class="form-control" name="new_password" id="password_confirm" placeholder="Name" required>
-                              <label for="floatingPassword">New Password</label>
-                            </div>
-                        </p>
                         <br>
-
+                        
                         <button type="submit" name ='submit' id="login-button">
                             <i class="bi bi-arrow-right" id="arrow-icon"></i>
                         </button>
