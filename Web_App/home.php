@@ -32,6 +32,9 @@
         <i class="bi bi-table" style="color:black"></i>
     </a>
   </li>
+  <li>
+    <img src="img/logo_web_app-removebg-preview.png" style="width: ;height: ;" alt="">
+  </li>
 </ul>
     <div class="container-fluid">
         <div class="row">
