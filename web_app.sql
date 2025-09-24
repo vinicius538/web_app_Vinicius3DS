@@ -37,6 +37,26 @@ CREATE TABLE `sign_up` (
   `status` varchar(20) NOT NULL DEFAULT 'disponivel',
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+create table eventos(
+	id_evento int primary key auto_increment,
+    nome_evento varchar(120) not null,
+    descricao varchar(500) not null,
+    local varchar(200) not null,
+    data date not null,
+    hora time not null,
+    capacidade int(6),
+    imagem varchar(255)
+);
+
+create table reservas(
+	id_reserva int primary key auto_increment,
+    id_usuario int not null,
+    id_evento int not null,
+    status_reserva char(1) not null,
+    
+    foreign key(id_usuario) references sign_up(id_user),
+    foreign key(id_evento) references eventos(id_evento)
+);
 --
 -- Despejando dados para a tabela `sign_up`
 --
