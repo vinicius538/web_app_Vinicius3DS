@@ -7,4 +7,4 @@ Nome: Vinicius de Souza | Web App | Um site web de autenticação de usuário co
 •Contagem de acesso ao sistema ✓\
 •Trocar senha no 1ºacesso X\
 •Implementar API do Google Maps X\
-•Implementar outra API de minha escolha X\ 
+•Implementar outra API de minha escolha X 
