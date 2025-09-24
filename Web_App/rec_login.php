@@ -38,9 +38,9 @@
                                 Recover your login
                             </strong>
                         </h3>
-                            
+                            <img src="img/logo_web_app-removebg-preview.png" style="width:50px ;height:50px;" alt="">
                         <p>
-                         <br>                                                                                                                                                               
+                         <br>
 
                             <div class="form-floating mb-3" style="width: 300px;">
                               <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
@@ -50,8 +50,12 @@
                             <button type="submit" name ='submit' id="login-button">
                                 <i class="bi bi-arrow-right" id="arrow-icon"></i>
                             </button>
-
                         <br>
+                        <p style="margin-top: 30px;">
+                            <div class="new">
+                                <a href="sign_up.php">Create account</a>
+                            </div>
+                        </p>
                 </form>
             </center>
         </div>

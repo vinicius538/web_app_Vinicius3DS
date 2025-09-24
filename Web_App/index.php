@@ -32,7 +32,7 @@
                                 Sign in
                             </strong>
                         </h3>
-                            
+                            <img src="img/logo_web_app-removebg-preview.png" style="width:50px ;height:50px;" alt="">
                         <p>
                          <br>                                                                                                                                                               
 

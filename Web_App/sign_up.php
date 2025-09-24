@@ -42,7 +42,7 @@
                                 Sign up
                             </strong>
                         </h3>
-                            
+                            <img src="img/logo_web_app-removebg-preview.png" style="width:50px ;height:50px;" alt="">
                         <p>
                         
                             <div class="form-floating mb-3" style="width: 300px;">

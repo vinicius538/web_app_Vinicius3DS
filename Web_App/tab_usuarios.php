@@ -34,6 +34,9 @@
         <i class="bi bi-table" style="color:black"></i>
     </a>
   </li>
+  <li>
+    <img src="img/logo_web_app-removebg-preview.png" style="width:30px ;height:35px ;margin-right:5px ; padding-top:5px ;" alt="">
+  </li>
 </ul>
     <div class="container">
         <div class="row">
