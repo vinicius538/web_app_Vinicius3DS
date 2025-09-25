@@ -12,6 +12,7 @@
             echo "<script>alert('Email already registered. Please use a different email.');</script>";
         } else {
             $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
+            echo "<script>alert('Your account has been created!')</script>";
         }
         
     }
