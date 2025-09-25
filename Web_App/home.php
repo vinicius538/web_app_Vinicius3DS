@@ -39,56 +39,69 @@
 </ul>
     <div class="container">
         <div class="row">
-          <div class="col-10 mx-auto" style="background-color: white; margin-top: 30px; padding-bottom: 80px;">
+          <div class="col-11 mx-auto" style="background-color: white; margin-top: 30px; padding-bottom: 80px;">
               <h3 class="poppins-light" style="padding-top: 50px;">
                   <strong class="d-block text-center">
                       Welcome to the Web App
                   </strong>
               </h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>
-                      Recent
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="card" style="width: 18rem;">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Copacabana</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                    </td>
-                    <td>
-                      <div class="card" style="width: 18rem;">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Feira de São Cristóvão</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                    </td>
-                    <td>
-                      <div class="card" style="width: 18rem;">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Rock in Rio</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                </tbody>
+                 <strong>
+                    Your events
+                  </strong>
+                  <br>
+                    
+                      <a href="create_event.php">
+                        <button>
+                          <img src="img/pluh.jpg" style="width: 14rem;" alt="">
+                        </button>
+                      </a>
 
-              </table>
+                    <h4 class="mt-5 mb-3">Recent</h4>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="img/copacabana.webp" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Copacabana</h5>
+                            <p class="card-text">Praia icônica do Rio, famosa pelo calçadão, eventos ao ar livre e o Réveillon que atrai milhões.</p>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="img/cristovao.webp" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Feira de São Cristóvão</h5>
+                            <p class="card-text">Espaço cultural com comidas típicas, música e artesanato que celebra a cultura nordestina.</p>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="img/rock in rio.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Rock in Rio</h5>
+                            <p class="card-text">Um dos maiores festivais de música do mundo, com shows nacionais e internacionais incríveis.</p>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="img/festa junina.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Festa Junina</h5>
+                            <p class="card-text">Celebrações com quadrilhas, comidas típicas, roupas caipiras e música regional.</p>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </div>
     </div>
 </body>

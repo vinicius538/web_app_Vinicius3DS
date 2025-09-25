@@ -49,15 +49,15 @@
 
                         <br>
 
-                        <button class="btn btn-secondary google" id="google">
+                        <button type="button" class="btn btn-secondary google" id="google">
                             <i class="bi bi-google">
                             </i>
                         </button>
-                        <button class="btn btn-secondary facebook" id="face">
+                        <button type="button" class="btn btn-secondary facebook" id="face">
                             <i class="bi bi-facebook">
                             </i>
                         </button>
-                        <button class="btn btn-secondary github" id="git">
+                        <button type="button" class="btn btn-secondary github" id="git">
                             <i class="bi bi-github">
                             </i>
                         </button>
