@@ -13,6 +13,7 @@
 </head>
 <body style="background-color: lightgray;">
     <ul class="nav justify-content-end" style="background-color: white;">
+      
   <li class="nav-item">
     <a class="nav-link" href="index.php" style="color: black;">
       <i class="bi bi-person-circle"></i>
