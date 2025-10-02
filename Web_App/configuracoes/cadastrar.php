@@ -10,10 +10,10 @@ if(isset($_POST['submit'])){
         $surname = $_POST['surname'];
 
         if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM sign_up WHERE email='$email'")) > 0) {
-            echo "<script>alert('Email already registered. Please use a different email.');</script>";
+            echo "<div class='alert alert-danger' role='alert'>A simple danger alert—check it out!</div>";
         } else {
             $result = mysqli_query($conn, "INSERT INTO sign_up(email, senha, nome, numero) VALUES('$email', '$password', '$name', '$number')");
-            echo "<script>alert('Your account has been created!')</script>";
+            echo "<div class='alert alert-success' role='alert'>Your account has been!</div>";
         }
         
     }
