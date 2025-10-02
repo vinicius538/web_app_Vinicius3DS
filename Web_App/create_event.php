@@ -18,6 +18,32 @@
     <title>Create event</title>
 </head>
 <body style="background-color: lightgray;">
+  <ul class="nav justify-content-end" style="background-color: white;">
+      
+  <li class="nav-item">
+    <a class="nav-link" href="index.php" style="color: black;">
+      <i class="bi bi-person-circle"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="configuracao_user.php">
+        <i class="bi bi-gear-fill" style="color: black;"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="home.php" class="nav-link">
+        <i class="bi bi-house-door-fill" style="color: black;"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tab_usuarios.php">
+        <i class="bi bi-table" style="color:black"></i>
+    </a>
+  </li>
+  <li>
+    <img src="img/logo_web_app-removebg-preview.png" style="width:30px ;height:35px ;margin-right:5px ; padding-top:5px ;" alt="">
+  </li>
+</ul>
     <div class="container">
         <div class="row">
           <form action="sign_up.php" method="POST">
@@ -57,18 +83,7 @@
                       </div>
                     </p>
                   </div>
-                  <div class="row">
-                    <p>
-                      <div class="form-floating mb-3" style="width: 300px; margin-left: 70px;">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
-                        <label for="floatingInput">Local</label>
-                      </div>
-                      <div class="form-floating mb-3" style="width: 300px;">
-                        <input type="file" class="form-control" name="number" id="number" placeholder="Number" required>
-                        <label for="floatingInput">Image</label>
-                      </div>
-                    </p>
-                  </div>
+                  
               </div>
           </form>
         </div>

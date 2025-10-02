@@ -53,7 +53,7 @@
                     
                       <a href="create_event.php">
                         <button>
-                          <img src="img/pluh.jpg" style="width: 14rem;" alt="">
+                          <i class="bi bi-plus-lg" style="width: 14rem;"></i>
                         </button>
                       </a>
 
