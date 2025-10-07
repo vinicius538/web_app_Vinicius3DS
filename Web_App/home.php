@@ -51,7 +51,7 @@
                   </strong>
                   <br>
                     
-                      <a href="create_event.php">
+                      <a href="create_event1.php">
                         <button>
                           <img src="img/pluh.jpg" style="width: 14rem;" alt="">
                         </button>

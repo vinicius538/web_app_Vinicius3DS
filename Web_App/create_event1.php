@@ -65,7 +65,7 @@
                         <label for="floatingInput">Name</label>
                       </div>
                       <div class="form-floating" style="width: 300px;">
-                        <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" minlength="4" required>
+                        <input type="date" class="form-control" name="password" id="floatingPassword" placeholder="Password" minlength="4" required>
                         <label for="floatingPassword">Date</label>
                       </div>
                     </p>
@@ -74,14 +74,21 @@
                   <div class="row">
                     <p>
                       <div class="form-floating mb-3" style="width: 300px; margin-left: 70px;">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                        <input type="number" class="form-control" name="name" id="name" placeholder="Name" required>
                         <label for="floatingInput">Capability</label>
                       </div>
                       <div class="form-floating mb-3" style="width: 300px;">
-                        <input type="text" class="form-control" name="number" id="number" placeholder="Number" required>
+                        <input type="time" class="form-control" name="number" id="number" placeholder="Number" required>
                         <label for="floatingInput">Hour</label>
                       </div>
                     </p>
+                  </div>
+                  <div class="row">
+                    <a href="create_event2.php" class="text-end">
+                      <button type="button" class="btn btn-secondary btn-sm me-3">
+                        Next
+                      </button>
+                    </a>
                   </div>
                   
               </div>

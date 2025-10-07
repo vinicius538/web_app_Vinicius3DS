@@ -1,13 +1,8 @@
-<?php 
+<?php
     $dbHost = 'localhost';
-    $dbUser = 'root';
+    $dbUsername = 'root';
     $dbPassword = '';
     $dbName = 'web_app';
-
-    $conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
-
-    if ($conn->connect_error) {
-        echo"Connection failed: ";
-    }
-
+    
+    $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 ?>
