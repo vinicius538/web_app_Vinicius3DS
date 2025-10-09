@@ -76,16 +76,20 @@
                     </p>
                   </div>
                   <div class="row">
-                    <a href="home.php" class="text-end">
-                      <button type="button" class="btn btn-secondary btn-sm me-3">
-                        Next
-                      </button>
-                    </a>
-                    <a href="create_event2.php" class="text-start">
-                      <button type="button" class="btn btn-secondary btn-sm ms-3">
-                        Next
-                      </button>
-                    </a>
+                    <div class="col">
+                      <a href="home.php" class="text-end">
+                        <button type="button" class="btn btn-secondary btn-sm me-3">
+                          Create
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="create_event1.php" class="text-start">
+                        <button type="button" class="btn btn-secondary btn-sm ms-3">
+                          Previous
+                        </button>
+                      </a>
+                    </div>
                   </div>
               </div>
           </form>

@@ -48,6 +48,12 @@
                             </div>
 
                             <div class="form-floating mb-3" style="width: 300px;">
+                              <input type="text" class="form-control" name="surname" id="surname" placeholder="Surname" required>
+                              <label for="floatingInput">Surname</label>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="form-floating mb-3" style="width: 300px;">
                               <input type="number" class="form-control" name="number" id="number" placeholder="Number" required>
                               <label for="floatingInput">Number</label>
                             </div>

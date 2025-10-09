@@ -32,7 +32,8 @@ CREATE TABLE `sign_up` (
   id_user int(4) primary key not null auto_increment,
   `email` varchar(256) NOT NULL,
   `senha` varchar(256) NOT NULL,
-  `nome` varchar(256) NOT NULL,
+  `nome` varchar(56) NOT NULL,
+  sobrenome varchar(200) not null,
   `numero` int(15) NOT NULL,
   `status` varchar(20) NOT NULL DEFAULT 'disponivel',
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -60,16 +61,6 @@ create table reservas(
 --
 -- Despejando dados para a tabela `sign_up`
 --
-
-INSERT INTO `sign_up` (`email`, `senha`, `nome`, `numero`, `status`) VALUES
-('vinicius.souza110208@gmail.com', 'eunaoaguentomais', 'vinopavel', 12121212, 'disponivel'),
-('vinicius.pcd@gmail.com', 'Pcd1234', 'Vinicius de Souza', 981879552, 'disponivel'),
-('untitled@gmail.com', 'null', 'nulo', 1298181879, 'disponivel'),
-('nameless@gmail.com', '1234qp', 'Sem Nome', 123, 'disponivel'),
-('jokerdop5r@gmail.com', 'persona5', 'joker do persona 5', 555555555, 'disponivel'),
-('exemplo@gmail.com', 'exemplo', 'exemplo', 2147483647, 'disponivel'),
-('eu@gmail.com', '1234', 'viniço', 2147483647, 'disponivel');
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

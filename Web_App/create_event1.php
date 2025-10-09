@@ -1,6 +1,5 @@
 <?php
     include_once('configuracoes/config.php');
-
 ?>
 
 <!DOCTYPE html>
