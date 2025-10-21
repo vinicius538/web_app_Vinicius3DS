@@ -1,5 +1,6 @@
 <?php
-    include_once('configuracoes/config.php');
+  include_once('configuracoes/config.php');
+  include_once('configuracoes/criar_evento.php');
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +46,7 @@
 </ul>
     <div class="container">
         <div class="row">
-          <form action="sign_up.php" method="POST">
+          <form action="create_event2.php" method="POST">
               <div class="col-8 mx-auto" style="background-color: white; margin-top: 30px; padding-bottom: 40px;">
                   <h3 class="poppins-light" style="padding-top: 50px;">
                       <strong class = 'd-block text-center'>
@@ -60,11 +61,11 @@
                     <p>
                     
                       <div class="form-floating mb-3" style="width: 300px; margin-left: 70px;">
-                        <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
+                        <input type="text" class="form-control" name="name_event" id="name_event" placeholder="name@example.com" required>
                         <label for="floatingInput">Name</label>
                       </div>
                       <div class="form-floating" style="width: 300px;">
-                        <input type="date" class="form-control" name="password" id="floatingPassword" placeholder="Password" minlength="4" required>
+                        <input type="date" class="form-control" name="date_event" id="date" placeholder="Password" minlength="4" required>
                         <label for="floatingPassword">Date</label>
                       </div>
                     </p>
@@ -73,18 +74,18 @@
                   <div class="row">
                     <p>
                       <div class="form-floating mb-3" style="width: 300px; margin-left: 70px;">
-                        <input type="number" class="form-control" name="name" id="name" placeholder="Name" required>
+                        <input type="number" class="form-control" name="capability_event" id="capability" placeholder="Name" required>
                         <label for="floatingInput">Capability</label>
                       </div>
                       <div class="form-floating mb-3" style="width: 300px;">
-                        <input type="time" class="form-control" name="number" id="number" placeholder="Number" required>
+                        <input type="time" class="form-control" name="hour_event" id="hour" placeholder="Number" required>
                         <label for="floatingInput">Hour</label>
                       </div>
                     </p>
                   </div>
                   <div class="row">
                     <a href="create_event2.php" class="text-end">
-                      <button type="button" class="btn btn-secondary btn-sm me-3">
+                      <button type="submit" class="btn btn-secondary btn-sm me-3">
                         Next
                       </button>
                     </a>

@@ -1,6 +1,6 @@
 <?php
-    include_once('configuracoes/config.php');
-
+  include_once('configuracoes/config.php');
+  include_once('configuracoes/criar_evento.php');
 ?>
 
 <!DOCTYPE html>
@@ -57,39 +57,34 @@
                     <img src="img/logo_web_app-removebg-preview.png" class="rounded" style="width:50px ;height:50px;" alt="">
                   </div>
 
-                  <div class="row">
-                    <p>
-                    
-                      <div class="form-floating mb-3" style="width: 500px; margin-left: 70px;">
-                        <input type="file" class="form-control" name="image" id="floatingInput" placeholder="name@example.com" required>
-                        <label for="floatingInput">Image</label>
-                      </div>
-                    </p>
+                  <div class="row ">
+                    <div class="form-floating mb-3" style="width: 500px; margin-left: 130px;">
+                      <input type="file" class="form-control" name="image" id="floatingInput" placeholder="Image" required>
+                      <label for="floatingInput">Image</label>
+                    </div>
                   </div>
                       
                   <div class="row">
-                    <p>
-                      <div class="form-floating mb-3" style="width: 500px; ; margin-left: 70px;">
-                        <textarea type="text" class="form-control" name="desc" id="desc" placeholder="Description" required style="height: 100px;"></textarea>
-                        
-                      </div>
-                    </p>
+                    <div class="form-floating mb-3" style="width: 500px; margin-left: 130px;">
+                      <textarea type="text" class="form-control" name="desc" id="desc" placeholder="Description" required style="height: 100px;"></textarea>
+                    </div>
                   </div>
                   <div class="row">
-                    <div class="col">
-                      <a href="home.php" class="text-end">
-                        <button type="button" class="btn btn-secondary btn-sm me-3">
-                          Create
-                        </button>
-                      </a>
-                    </div>
-                    <div class="col">
+                    <div class="col-10">
                       <a href="create_event1.php" class="text-start">
                         <button type="button" class="btn btn-secondary btn-sm ms-3">
                           Previous
                         </button>
                       </a>
                     </div>
+                    <div class="col-2 ">
+                      <a href="home.php" class="text-end">
+                        <button type="submit" class="btn btn-secondary btn-sm me-3">
+                          Create
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                   </div>
               </div>
           </form>
