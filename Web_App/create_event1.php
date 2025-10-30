@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create event</title>
+    <title>Web app - Create event</title>
 </head>
 <body style="background-color: lightgray;">
   <ul class="nav justify-content-end" style="background-color: white;">
@@ -84,13 +84,10 @@
                     </p>
                   </div>
                   <div class="row">
-                    <a href="create_event2.php" class="text-end">
-                      <button type="submit" class="btn btn-secondary btn-sm me-3">
+                      <button type="submit" name="submit1" class="btn btn-secondary btn-sm me-3">
                         Next
                       </button>
-                    </a>
                   </div>
-                  
               </div>
           </form>
         </div>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create event</title>
+    <title>Web app - Create event</title>
 </head>
 <body style="background-color: lightgray;">
   <ul class="nav justify-content-end" style="background-color: white;">
@@ -46,7 +46,7 @@
 </ul>
     <div class="container">
         <div class="row">
-          <form action="sign_up.php" method="POST">
+          <form action="home.php" method="POST">
               <div class="col-8 mx-auto" style="background-color: white; margin-top: 30px; padding-bottom: 40px;">
                   <h3 class="poppins-light" style="padding-top: 50px;">
                       <strong class = 'd-block text-center'>
@@ -78,14 +78,12 @@
                       </a>
                     </div>
                     <div class="col-2 ">
-                      <a href="home.php" class="text-end">
-                        <button type="submit" class="btn btn-secondary btn-sm me-3">
-                          Create
-                        </button>
-                      </a>
+                      <button type="submit" name ="submit2" class="btn btn-secondary btn-sm me-3">
+                        Create
+                      </button>
                     </div>
                   </div>
-                  </div>
+                </div>
               </div>
           </form>
         </div>
