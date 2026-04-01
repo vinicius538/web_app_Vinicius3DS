@@ -3,7 +3,7 @@ Nome: Vinicius de Souza | Web App | Um site web de autenticação de usuário co
 \
 
 •Validar senha ✓\
-•Bloquear acesso X\
+•Bloquear acesso ✓\
 •Contagem de acesso ao sistema ✓\
 •Implementar API do Google Maps ✓\
 •Implementar outra API de minha escolha ✓ 
